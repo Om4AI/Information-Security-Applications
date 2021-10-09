@@ -147,7 +147,8 @@ public class RSA_DB_Connection{
                 }
             }
         }
-        System.out.println("\nFetched USERNAME-- "+sb.toString());
+        String decrypt_username = sb.toString();
+        System.out.println("\nFetched USERNAME-- "+decrypt_username);
 
         sb.setLength(0);
         for (int k=0; k<dec_pass.length; k++){
@@ -159,7 +160,8 @@ public class RSA_DB_Connection{
                 }
             }
         }
-        System.out.println("\nFetched PASSWORD-- "+sb.toString());
+        String decrypt_pass = sb.toString();
+        System.out.println("\nFetched PASSWORD-- "+decrypt_pass);
 
     }
  
